@@ -15,6 +15,8 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
@@ -103,13 +105,6 @@ fun CustomCard(image: Painter, heading: String, height: Int = 100, width: Int = 
     }
 }
 
-@Preview
-@Composable
-fun DisplayCard(){
-
-}
-
-
 
 @Composable
 fun DisplayPDF(fileName: String, date: String, onClick:() -> Unit){
@@ -145,5 +140,19 @@ fun DisplayPDF(fileName: String, date: String, onClick:() -> Unit){
                 Icon(painter = painterResource(id = R.drawable.download), contentDescription = "", modifier = Modifier.size(20.dp).clickable { onClick() }, tint = Color.White)
             }
         }
+    }
+}
+
+
+// Save/Upload Button
+@Composable
+fun SaveUploadButton(title: String, onClick: () -> Unit){
+    Button(
+        modifier = Modifier.fillMaxWidth(),
+        shape = RoundedCornerShape(10.dp),
+        colors = ButtonDefaults.buttonColors(colorResource(id = R.color.secondary_blue)),
+        onClick = {onClick()})
+    {
+        Text(title)
     }
 }
