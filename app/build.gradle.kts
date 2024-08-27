@@ -96,7 +96,5 @@ dependencies {
     implementation(platform(libs.firebase.bom.v3200))
     implementation(libs.firebase.database.ktx)
 
-    implementation("com.razorpay:checkout:1.6.38")
-
 
 }
