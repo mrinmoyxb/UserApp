@@ -12,8 +12,4 @@
     <color name="TextHeading">#FF4C3BCF</color>
     <color name="TextBoxColor">#FFC2D9FF</color>
     <color name="secondary_blue">#FF3572EF</color>
-    <color name="secondary_gray">#FFEEEEEE</color>
-    <color name="secondary_gray1">#FFEEEDEB</color>
-    <color name="subheadingColor">#FFE3E1D9</color>
-    <color name="colorRed">#FFE72929</color>
 </resources>
